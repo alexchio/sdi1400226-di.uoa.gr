@@ -1,0 +1,40 @@
+/globalDiseaseStats
+disease1 number
+disease2 number
+diseaseN number
+
+/diseaseFrequency
+disease1 number
+disease2 number
+diseaseN number
+
+/topk-Diseases
+disease1 number
+disease2 number
+diseasek number
+
+/topk-Countries
+country1 number
+country2 number
+countryk number
+
+/insertPatientRecord
+Record added
+
+/recordPatientExit  
+Record updated 
+
+/recordPatientExit  (in case patient record does not exist)
+Not found  
+
+/numCurrentPatients
+disease1 number
+disease2 number
+diseaseN number
+
+/exit
+exiting
+
+If any command has error just print:
+error
+

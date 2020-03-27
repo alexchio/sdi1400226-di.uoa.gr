@@ -1,0 +1,6 @@
+gcc -g -c -Wall diseaseMonitor.c 
+diseaseMonitor.c: In function ‘main’:
+diseaseMonitor.c:76:11: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     while(nread=getline(&line, &len, fp)!=-1)   //read whole file to get #of records
+           ^~~~~
+gcc -g diseaseMonitor.o hashtable.o rbt.o bf.o list.o -o diseaseMonitor 

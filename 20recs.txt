@@ -1,0 +1,11 @@
+539 Laura Hale FLU-2018 Argentina 27-06-2000 25-07-2002
+666 Kayla Hamilton SARS-1 Greece 22-02-2001 -
+652 James Burke FLU-2018 Russia 22-06-2003 23-02-2010
+817 Tyler Dickerson COVID-2019 France 03-05-2002 12-02-2020
+566 Heather Jones SARS-COV-2 Egypt 05-10-2009 29-08-2011
+385 Stephanie Little FLU-2018 Egypt 19-04-2008 21-07-2011
+901 Brianna Campbell SARS-1 Greece 20-02-2014 18-12-2016
+278 William Powers SARS-COV-2 Brazil 07-03-2007 09-12-2009
+275 Timothy Orr SARS-COV-2 France 25-09-2005 15-12-2016
+872 Victoria Mosley SARS-1 USA 07-12-2012 19-05-2007
+177 Debbie Jones H1N1 Germany 24-12-2013 17-10-2011
