@@ -1,1 +1,1 @@
-/diseaseFrequency EVD 01-01-2001 31-12-2019 China
+/insertPatientRecord 1000 Joan Jones FLU Greece 12-12-2018 12-12-2019

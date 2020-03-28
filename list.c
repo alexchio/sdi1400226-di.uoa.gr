@@ -47,17 +47,18 @@ int set_exitdate(list_node* head, char* key, date exit){
     while(head!=NULL){
         if (strcmp(head->recordID, key)==0){
             if (date_older(head->entryDate, exit)==2){
-                printf("$$Exit date must be after entry date.\n");
-                return 1;
+                printf("error\n");
+                return -1;
             }
             head->exitDate.day=exit.day;
             head->exitDate.month=exit.month;
             head->exitDate.year=exit.year;
-            printf("Exit date has just been changed\n");
+            printf("Record updated\n");
             return 1;
         }
         head=head->next;
     }
+    printf("Not found\n");
     return 0;
 }
 

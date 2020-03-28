@@ -4,9 +4,7 @@ disease2 number
 diseaseN number
 
 /diseaseFrequency
-disease1 number
-disease2 number
-diseaseN number
+disease number
 
 /topk-Diseases
 disease1 number
@@ -21,11 +19,8 @@ countryk number
 /insertPatientRecord
 Record added
 
-/recordPatientExit  
-Record updated 
-
-/recordPatientExit  (in case patient record does not exist)
-Not found  
+/recordPatientExit
+Record updated
 
 /numCurrentPatients
 disease1 number
@@ -34,7 +29,3 @@ diseaseN number
 
 /exit
 exiting
-
-If any command has error just print:
-error
-

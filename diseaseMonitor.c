@@ -116,7 +116,7 @@ int main(int argc, char* argv[]){
                 }
             }
         }else{
-            printf("###Record with ID:%s is rejected cause of date error.\n", recordID);
+            printf("error\n");
         }
     }
     fclose(fp);
@@ -138,7 +138,7 @@ int main(int argc, char* argv[]){
             if(strcmp(arg[1],"*")==0){          //xwris date1 date2
                 table_patients(diseaseHashTable, diseaseHashtableNumOfEntries);
             }else if(strcmp(arg[2],"*")==0){
-                printf("$$You must give an exit date.\n");
+                printf("error\n");
             }else{          //me date1 date2
                 string_to_date(arg[1], &inDate);
                 string_to_date(arg[2], &outDate);
@@ -153,18 +153,20 @@ int main(int argc, char* argv[]){
             else
                 table_patients_doublekey_ranged(diseaseHashTable, diseaseHashtableNumOfEntries, inDate, outDate, arg[1], arg[4]);
         }else if (strcmp(command, "/topk-Diseases")==0){
+            printf("1\n");
 
         }else if (strcmp(command, "/topk-Countries")==0){
-
+            printf("1\n");
         }else if (strcmp(command, "/insertPatientRecord")==0){
             string_to_date(arg[6], &inDate);
-            if(strcmp(arg[7],"*")==0)
+            if(strcmp(arg[7],"*")==0){
                 string_to_date("-", &outDate);
-            else
+            }else{
                 string_to_date(arg[7], &outDate);
-            if (date_older(inDate, outDate)==2)
-                printf("$$Exit date must be after entry date.\n");
-            else{
+            }
+            if (date_older(inDate, outDate)==2){
+                printf("error.\n");
+            }else{
                 if (check_bf(arg[1], bf)==0){
                     list_insert(&head, arg[1], arg[5], arg[4], arg[2], arg[3], inDate, outDate);
                     insert_key(arg[1], &bf);
@@ -182,9 +184,9 @@ int main(int argc, char* argv[]){
                 }
             }
         }else if (strcmp(command, "/recordPatientExit")==0){
-            string_to_date(arg[3], &outDate);
-            if (set_exitdate(head, arg[2], outDate)==0)
-                printf("Not found\n");
+            string_to_date(arg[2], &outDate);
+            set_exitdate(head, arg[1], outDate);
+
         }else if (strcmp(command, "/numCurrentPatients")==0){
                 if (strcmp(arg[1], "*")!=0){
                     temp=search_table(diseaseHashTable, arg[1], diseaseHashtableNumOfEntries);
@@ -202,7 +204,7 @@ int main(int argc, char* argv[]){
         }else if (strcmp(command, "/exit")==0){
             printf("exiting\n");
         }else{
-            printf("\nWrong command, please try again.\n");
+            printf("Wrong command, please try again.\n");
         }
 
     }while (strcmp(command, "/exit")!=0);

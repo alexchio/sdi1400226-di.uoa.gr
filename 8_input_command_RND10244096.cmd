@@ -1,1 +1,1 @@
-/topk-Diseases 2 France 01-01-2019 31-12-2019
+/diseaseFrequency EVD 01-01-2000 20-03-2020 China
